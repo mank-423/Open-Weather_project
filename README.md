@@ -4,6 +4,8 @@ A small project for the implmetation of the OpenWeatherMap API from which accord
 Made with HTML, CSS, Bootstrap, Javscript and Express stack.
 Focus was on the usage of API and it's integration in a project.
 
+Link for this project: https://weathermank.onrender.com/
+
 <center><b>Entry of the city name</b></center>
 <br></br>
 <img width="958" alt="Screenshot 2023-03-19 004046" src="https://user-images.githubusercontent.com/96490105/226131391-e90f92d7-6213-4990-8731-1faef7a62a6e.png">
