@@ -31,11 +31,12 @@ app.post("/", function(req, res){
             const icon = weatherData.weather[0].icon;
             const imgURL = "https://openweathermap.org/img/wn/"+icon+"@2x.png";
 
+            res.write("<div style='background-color:black; padding:0%;margin:0%;'> <center> <div style='background-color:cadetblue; border-style: solid; width:60%; height:100%;'>")
             res.write("<h1>Temperature of " +query+ " is: "+temp+" degree celsius </h1>");
             res.write("<h1>Weather is:"+feel+"</h1>");
             res.write("<h1>Description is:"+describe+"</h1>")
             res.write("<img src="+imgURL+">");
-
+            res.write("</div> </center> </div>")
             res.send();
 
         });

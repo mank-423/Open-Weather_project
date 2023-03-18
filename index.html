@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- Title -->
     <title>Weather App</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .entry{
+            margin-top: 50%;
+            width: 50%;
+            padding: 10%;
+            background-color:cadetblue;
+            border-color: black;
+        };
+
+        .btn{
+            width: 150px;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="/" method="post">
-        <label for="cityInput">City Name:</label>
-        <input id="cityInput" type="text" name="cityName">
-        <br><br>
-        <button type="submit">GO</button>
-    </form>
+    <center>
+        <form action="/" method="post" class="mt-5 entry border border-5 border-dark rounded">
+            <h1>Your city name</h1>
+            <br>
+            <input id="cityInput" type="text" name="cityName" class="input-group rounded">
+            <br><br>
+            <button type="submit" class="btn btn-warning btn-lg border-dark"><span class="fw-bold">Check weather report</span></button>
+        </form>
+    </center>
 </body>
 </html>
